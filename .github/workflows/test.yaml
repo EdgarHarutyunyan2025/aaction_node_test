@@ -9,6 +9,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Run Docker-based Action
-        uses: /home/edgar/DevOps/actions/test_node/dockerfile 
+        uses: ./actions.yml 
         with:
           message: 'Hello, Docker!' 
