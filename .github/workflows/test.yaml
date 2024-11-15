@@ -13,6 +13,6 @@ jobs:
           ls -la 
           pwd
       - name: Run Docker-based Action
-        uses: ./action.yml
+        uses: ./
         with:
           message: 'Hello, Docker!' 
