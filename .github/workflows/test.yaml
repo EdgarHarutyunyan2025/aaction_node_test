@@ -6,8 +6,7 @@ jobs:
   test-job:
     strategy:
       matrix:
-        node-version: [14,16]
-        os: [ubuntu-latest,windows-latest]
+        os: [ubuntu-latest,windows-latest,macos-lates]
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -16,6 +15,6 @@ jobs:
       - name: install node js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20
       - name: run script
         run: node app.js
