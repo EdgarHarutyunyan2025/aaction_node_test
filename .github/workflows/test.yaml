@@ -13,6 +13,6 @@ jobs:
           ls -ls 
           pwd
       - name: Run Docker-based Action
-        uses: /home/runner/work/aaction_node_test/aaction_node_test
+        uses: ./
         with:
           message: 'Hello, Docker!' 
