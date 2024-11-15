@@ -1,0 +1,12 @@
+name: 'My Docker Action'
+description: 'This action runs a script inside a Docker container.'
+inputs:
+  message:
+    description: 'Message to display in the Docker container.'
+    required: true
+    default: 'Hello from Docker Action!'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'  
+  args:
+    - ${{ inputs.message }} 
