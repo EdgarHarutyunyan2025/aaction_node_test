@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       - name: pwd
         run: |
-          ls -ls 
+          ls -la 
           pwd
       - name: Run Docker-based Action
         uses: ./action.yml
