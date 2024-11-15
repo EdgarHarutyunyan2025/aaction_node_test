@@ -6,14 +6,14 @@ jobs:
   test-job:
     strategy:
       matrix:
-        os: [ubuntu-latest,windows-latest,macos-lates]
+        os: [windows-latest,macos-lates,ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
     steps:
       - name: get repository
         uses: actions/checkout@v4
       - name: install node js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: run script
